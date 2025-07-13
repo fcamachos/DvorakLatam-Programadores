@@ -14,8 +14,6 @@ xkb_symbols "basic" {
     key <AE03>  { [         3, numbersign, periodcentered,   sterling ] };
     key <AE04>  { [         4,     dollar,   asciitilde,       dollar ] };
     key <AE06>  { [         6,  ampersand,      notsign,  fiveeighths ] };
-    //key <AE11>  { [apostrophe,   question,    backslash, questiondown ] };
-    //key <AE12>  { [questiondown, exclamdown, dead_cedilla, dead_ogonek] };
         
     key <AC10>  { [    ntilde,     Ntilde,   asciitilde, dead_doubleacute ] };
     key <AC11>  { [ braceleft, bracketleft, dead_circumflex, braceleft] };
@@ -113,10 +111,10 @@ xkb_symbols "dvorak" {
     key <BKSL> {[ braceright,   bracketright,     dead_grave,     braceright ]}; 
 
     key <LSGT> {[       less,        greater,  guillemotleft, guillemotright ]};
-    key <AB01> {[      minus,     underscore,                         macron ]};
-    key <AB02> {[          q,              Q,                        currenc ]};
-    key <AB03> {[          j,              J                                 ]};
-    key <AB04> {[          k,              K,                            kra ]};
+    key <AB01> {[      minus,     underscore,              z,         macron ]};
+    key <AB02> {[          q,              Q,              x,        currenc ]};
+    key <AB03> {[          j,              J,              c                 ]};
+    key <AB04> {[          k,              K,              v,            kra ]};
     key <AB05> {[          x,              X,       multiply,       division ]};
     key <AB06> {[          b,              B                                 ]};
     key <AB07> {[          m,              M,             mu                 ]};
