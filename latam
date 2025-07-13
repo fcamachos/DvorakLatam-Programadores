@@ -120,8 +120,8 @@ xkb_symbols "dvorak" {
     key <AB05> {[          x,              X,       multiply,       division ]};
     key <AB06> {[          b,              B                                 ]};
     key <AB07> {[          m,              M,             mu                 ]};
-    key <AB08> {[          w,              W                                 ]}; 
-    key <AB09> {[          v,              V                                 ]};
+    key <AB08> {[          w,              W,   questiondown,     exclamdown ]}; 
+    key <AB09> {[          v,              V,       question,         exclam ]};
     key <AB10> {[          z,              Z,          slash,      backslash ]};
 
     include "level3(ralt_switch)"
