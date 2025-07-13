@@ -1,98 +1,76 @@
-# Teclado para Programadores Dvorak latam
+# Teclado Dvorak Latinoamericano para Programadores
 
-En vista de que hay pocas opciones en línea que se ajusten a mis necesidades específicas, me di a la tarea de 
-modificar directamente el teclado Dvorak latinoamericano. 
+## Descripción
+Este proyecto modifica el layout de teclado Dvorak latinoamericano estándar para optimizarlo específicamente para programadores. Los cambios se centran en mejorar el acceso a símbolos frecuentemente utilizados en programación, eliminando teclas muertas de poco uso y reorganizando símbolos para mayor eficiencia.
 
-En esta versión modificada me centré en eliminar las teclas muertas, o de poco uso (para quien esto escribe) y reemplazarlas
-por símbolos que se adecuen más a las necesidades de alguien que se dedica a la programación como principal actividad.
+## Filosofía del Proyecto
+- **Mantener la disposición base de Dvorak**: Las teclas principales permanecen intactas
+- **Optimizar el Level 3 (AltGr)**: Reemplazar símbolos poco utilizados por otros más relevantes para programación
+- **Mejorar la memoria dactilar**: Ubicar símbolos importantes cerca de atajos de teclado comunes (Ctrl+C, Ctrl+V, etc.)
+- **Eliminar teclas muertas innecesarias**: Sustituir dead keys por símbolos directamente accesibles
+
+## Cambios Implementados
+
+### Layout Básico (basic)
+- **Símbolos básicos optimizados**: Mantenimiento de la funcionalidad esencial sin teclas muertas
+
+### Layout Dvorak - Optimizaciones Level 3 (AltGr)
+
+| Tecla | Símbolo Base | Level 3 Modificado | Justificación |
+|-------|-------------|------------------|-------------------|
+| ñ | ñ, Ñ | `=` | Facilita escritura de `<=` `>=` (cerca de `<>`) |
+| p | p, P | `?` | Acceso rápido al símbolo `?` (más útil que `¶`) |
+| - | -, _ | `z` | Memoria dactilar Ctrl+Z |
+| q | q, Q | `x` | Memoria dactilar Ctrl+X |
+| j | j, J | `c` | Memoria dactilar Ctrl+C |
+| k | k, K | `v` | Memoria dactilar Ctrl+V |
+| w | w, W | `¿, ¡` | Acceso directo a símbolos de apertura interrogación/exclamación |
+| v | v, V | `?, !` | Símbolos de cerradura interrogación/exclamación |
+| z | z, Z | `/, \` | Barras frecuentes en programación |
+
+### Símbolos Optimizados para Programación
+
+#### Símbolos Críticos Incluidos
+- **Llaves**: `{}` - Definición de bloques de código
+- **Corchetes**: `[]` - Acceso a arrays y estructuras de datos
+- **Paréntesis**: `()` - Funciones y agrupación
+- **Operadores**: `=`, `==`, `!=`, `<`, `>`, `<=`, `>=`
+- **Operadores matemáticos**: `+`, `-`, `*`, `/`, `%`
+- **Barras**: `/`, `\` - Comentarios y rutas de archivos
+- **Símbolos especiales**: `#`, `$`, `@`, `~`, `^`, `|`
+
+#### Acceso Mejorado a Atajos
+- **Ctrl+C/V/X/Z**: Símbolos ubicados estratégicamente cerca de estos atajos
+- **Navegación**: Símbolos de comparación y asignación fácilmente accesibles
+- **Comentarios**: Acceso rápido a `#`, `//` y símbolos relacionados
+
+## Instalación
+
+1. **Backup del archivo original**:
+   ```bash
+   sudo cp /usr/share/X11/xkb/symbols/latam /usr/share/X11/xkb/symbols/latam.backup
+   ```
+
+2. **Aplicar la configuración modificada**:
+   ```bash
+   sudo cp latam /usr/share/X11/xkb/symbols/latam
+   ```
+
+3. **Reiniciar el sistema**:
+	También es posible cerrar sesión e iniciar de nuevo o forzar el reconocimiento del teclado cambiando el layout manualmente.
 
 
-Mi intención es mantener la disposición original de Dvorak latinoamericano, pero cambiando las teclas de acceso con el `Level3 Shift` (AltGr)
+## Contribuciones
+Se aceptan sugerencias y mejoras. Para contribuir:
+1. Fork del repositorio
+2. Crear rama feature
+3. Realizar cambios
+4. Enviar pull request
 
-## Propuestas para cambios
-ñ, Ñ, equal = ,    Razón: justo antes se encuentran los símbolos <>, por lo que tener un = cerca facilitaría la escritura de <= >=
-p, P, ?, ¶                Se prefiere tener un acceso rápido al símbolo ? en lugar de ¶
-q, Q, x, currency ¤       Memoria dactilar Ctrl+X  
-j, J, c,                  Memoria dactilar Ctrl+C  
-k, K, v,                  Memoria dactilar Ctrl+V  
--, _, z, 				  Memoria dactilar Ctrl+Z
-w, W, ¿, ¡
-v, V, ?, !
+## Licencia
+Este proyecto mantiene la licencia original del layout XKB latinoamericano.
 
-­­
-
-Símbolos frecuentes en programación:
-
-    {} – Llaves: usadas para definir bloques de código (en C, Java, JavaScript, etc.).
-
-    [] – Corchetes: acceden a elementos de arrays/listas o definen estructuras de datos.
-
-    () – Paréntesis: usados en funciones, condiciones y agrupación de expresiones.
-
-    ; – Punto y coma: termina sentencias en muchos lenguajes (C, Java, JavaScript).
-
-    = – Igual: asigna valores a variables.
-
-    == / === – Comparación de igualdad (doble/triple igual en JavaScript).
-
-    != / !== – Desigualdad ("no igual").
-
-    < , > , <= , >= – Operadores de comparación (menor, mayor, etc.).
-
-    + , - , * , / , % – Operadores matemáticos (suma, resta, multiplicación, división, módulo).
-
-    ++ / -- – Incremento/decremento (como en i++).
-
-    && , || , ! – Operadores lógicos (AND, OR, NOT).
-
-    # – Comentarios (en Python, Bash) o directivas (en C con #include).
-
-    // , /* */ – Comentarios (en JavaScript, Java, C++).
-
-    " " / ' ' – Comillas (para definir strings).
-
-    \ – Barra invertida (usada para escapes como \n, \t o en rutas de archivos en Windows).
-
-    . – Punto: acceso a métodos/propiedades (como objeto.método()).
-
-    -> – Flecha: acceso a miembros en punteros (C/C++) o funciones flecha (JavaScript: =>).
-
-    :: – Doble dos puntos: resolución de ámbito (en C++, Rust).
-
-    $ – Símbolo de variable (en PHP, Shell scripting) o interpolación (en JavaScript con template literals `${var}`).
-
-    @ – Decoradores (en Python) o anotaciones (en Java).
-
-Teclas importantes para programadores:
-
-    Tab → Indentación (vital en Python, HTML, etc.).
-
-    Ctrl + C / Ctrl + V → Copiar y pegar (¡muy usado!).
-
-    Ctrl + Z / Ctrl + Y → Deshacer/rehacer.
-
-    Ctrl + S → Guardar (¡salva vidas!).
-
-    Ctrl + F → Buscar en el código.
-
-    Ctrl + Shift + F → Búsqueda global (en IDEs).
-
-    Ctrl + D → Selección múltiple (en editores como VS Code).
-
-    Alt + Tab → Cambiar entre ventanas.
-
-    F5 / Ctrl + R → Ejecutar/recargar.
-
-    Ctrl + / → Comentar/descomentar código.
-
-Símbolos menos comunes pero útiles:
-
-    ~ – Tilde: operador bitwise NOT o directorio home en Linux (~/.bashrc).
-
-    ^ – XOR (bitwise) o exponente en algunos lenguajes.
-
-    | – Pipe: redirección en terminal o operador bitwise OR.
-
-    << , >> – Desplazamiento de bits (o entrada/salida en C++).
-
-    ?: – Operador ternario (condición ? verdadero : falso).
+## Créditos
+- **Autor original**: Fabian Mandelbaum
+- **Modificaciones**: fcamachos
+- **Basado en**: Layout Dvorak latinoamericano estándar
