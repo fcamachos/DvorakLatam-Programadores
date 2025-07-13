@@ -3,6 +3,8 @@
 ## Descripción
 Este proyecto modifica el layout de teclado Dvorak latinoamericano estándar para optimizarlo específicamente para programadores. Los cambios se centran en mejorar el acceso a símbolos frecuentemente utilizados en programación, eliminando teclas muertas de poco uso y reorganizando símbolos para mayor eficiencia.
 
+![dvorak_latam](latam_dvorak.png)
+
 ## Filosofía del Proyecto
 - **Mantener la disposición base de Dvorak**: Las teclas principales permanecen intactas
 - **Optimizar el Level 3 (AltGr)**: Reemplazar símbolos poco utilizados por otros más relevantes para programación
