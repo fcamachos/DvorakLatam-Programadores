@@ -94,8 +94,8 @@ xkb_symbols "dvorak" {
     key <AD08> {[          c,              C,           cent,      copyright ]};
     key <AD09> {[          h,              H,          U1E27,          U1E26 ]};
     key <AD10> {[          l,              L,       sterling                 ]};
-    key <AD11> {[ dead_acute, dead_diaeresis,    bracketleft,      braceleft ]};
-    key <AD12> {[       plus,       asterisk,   bracketright,     braceright ]};
+    key <AD11> {[ dead_acute, dead_diaeresis,      parenleft,      braceleft ]};
+    key <AD12> {[       plus,       asterisk,     parenright,     braceright ]};
 
     key <AC01> {[          a,              A,        amacron,        Amacron ]};
     key <AC02> {[          o,              O,        omacron,        Omacron ]};
