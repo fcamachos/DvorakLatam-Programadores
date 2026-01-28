@@ -8,43 +8,52 @@ Este proyecto modifica el layout de teclado Dvorak latinoamericano estándar par
 ## Filosofía del Proyecto
 - **Mantener la disposición base de Dvorak**: Las teclas principales permanecen intactas
 - **Optimizar el Level 3 (AltGr)**: Reemplazar símbolos poco utilizados por otros más relevantes para programación
-- **Mejorar la memoria dactilar**: Ubicar símbolos importantes cerca de atajos de teclado comunes (Ctrl+C, Ctrl+V, etc.)
 - **Eliminar teclas muertas innecesarias**: Sustituir dead keys por símbolos directamente accesibles
+- **Evitar el movimiento innecesario de la mano**
 
 ## Cambios Implementados
+(Se considera un Teclado con distribución QWERTY US)
 
 ### Layout Básico (basic)
-- **Símbolos básicos optimizados**: Mantenimiento de la funcionalidad esencial sin teclas muertas
+- **Símbolos básicos optimizados**: Mantenimiento de la funcionalidad esencial sin teclas muertas 
 
 ### Layout Dvorak - Optimizaciones Level 3 (AltGr)
 
+**Símbolos**
+
 | Tecla | Símbolo Base | Level 3 Modificado | Justificación |
 |-------|-------------|------------------|-------------------|
-| ñ | ñ, Ñ | `=` | Facilita escritura de `<=` `>=` (cerca de `<>`) |
-| p | p, P | `?` | Acceso rápido al símbolo `?` (más útil que `¶`) |
-| - | -, _ | `z` | Memoria dactilar Ctrl+Z |
-| q | q, Q | `x` | Memoria dactilar Ctrl+X |
-| j | j, J | `c` | Memoria dactilar Ctrl+C |
-| k | k, K | `v` | Memoria dactilar Ctrl+V |
-| w | w, W | `¿, ¡` | Acceso directo a símbolos de apertura interrogación/exclamación |
-| v | v, V | `?, !` | Símbolos de cerradura interrogación/exclamación |
-| z | z, Z | `/, \` | Barras frecuentes en programación |
+| Q | ., : | `<` | Acceso rápido para teclados en Inglés |
+| W | ,, ; | `>` | Acceso rápido para teclados en Inglés |
+| E | ñ, Ñ | `=` | Facilita escritura de `<=` `>=` (cerca de `<>`) |
+| [ | ´, ¨ | `(` | Acceso a paréntesis, cerca de las llaves y corchetes |
+| ] | +, * | `)` | Acceso a paréntesis, cerca de las llaves y corchetes |
+| Z | -, _ | `+,*` | Acceso redundante con la mano izquierda |
+| , | w, W | `¿, ¡` | Acceso directo a símbolos de apertura interrogación/exclamación |
+| . | v, V | `?, !` | Símbolos de cerradura interrogación/exclamación |
+| / | z, Z | `/, \` | Barras frecuentes en programación |
 
-### Símbolos Optimizados para Programación
 
-#### Símbolos Críticos Incluidos
-- **Llaves**: `{}` - Definición de bloques de código
-- **Corchetes**: `[]` - Acceso a arrays y estructuras de datos
-- **Paréntesis**: `()` - Funciones y agrupación
-- **Operadores**: `=`, `==`, `!=`, `<`, `>`, `<=`, `>=`
-- **Operadores matemáticos**: `+`, `-`, `*`, `/`, `%`
-- **Barras**: `/`, `\` - Comentarios y rutas de archivos
-- **Símbolos especiales**: `#`, `$`, `@`, `~`, `^`, `|`
+**Edición**
+| Tecla | Símbolo Base | Level 3 Modificado | 
+|-------|-------------|------------------|
+| R | p, P | `Insert` | 
+| ; | s, S | `Delete` | 
 
-#### Acceso Mejorado a Atajos
-- **Ctrl+C/V/X/Z**: Símbolos ubicados estratégicamente cerca de estos atajos
-- **Navegación**: Símbolos de comparación y asignación fácilmente accesibles
-- **Comentarios**: Acceso rápido a `#`, `//` y símbolos relacionados
+**Navegación**
+| Tecla | Símbolo Base | Level 3 Modificado | 
+|-------|-------------|------------------|
+| R | p, P | `Home` | 
+| V | k, K | `End` | 
+| U | g, G | `Prior` | 
+| M | m, M | `Next` | 
+| I | c, C | `Up` | 
+| K | k, K | `Down` | 
+| J | r, R | `Left` | 
+| L | l, L | `Right` | 
+
+
+
 
 ## Instalación
 
