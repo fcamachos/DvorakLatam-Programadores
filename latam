@@ -84,14 +84,14 @@ xkb_symbols "dvorak" {
     key <AE11> {[   apostrophe,     question,      backslash,   questiondown ]};
     key <AE12> {[ questiondown,   exclamdown,   dead_cedilla,    dead_ogonek ]};
 
-    key <AD01> {[     period,          colon,           less                 ]};
+    key <AD01> {[     period,          colon,           less, periodcentered ]};
     key <AD02> {[      comma,      semicolon,        greater                 ]};
     key <AD03> {[     ntilde,         Ntilde,          equal                 ]};
     key <AD04> {[          p,              P,         Insert				 ]};
     key <AD05> {[          y,              Y,            yen                 ]};
     key <AD06> {[          f,              F                                 ]};
-    key <AD07> {[          g,              G,          Prior                 ]};
-    key <AD08> {[          c,              C,             Up                 ]};
+    key <AD07> {[          g,              G,          Prior,          Prior ]};
+    key <AD08> {[          c,              C,             Up,             Up ]};
     key <AD09> {[          h,              H,          U1E27,          U1E26 ]};
     key <AD10> {[          l,              L                                 ]};
     key <AD11> {[ dead_acute, dead_diaeresis,      parenleft                 ]};
@@ -103,9 +103,9 @@ xkb_symbols "dvorak" {
     key <AC04> {[          u,              U,        umacron,        Umacron ]};
     key <AC05> {[          i,              I,        imacron,        Imacron ]};
     key <AC06> {[          d,              D                                 ]};
-    key <AC07> {[          r,              R,           Left                 ]};
-    key <AC08> {[          t,              T,           Down                 ]};
-    key <AC09> {[          n,              N,          Right                 ]};
+    key <AC07> {[          r,              R,           Left,           Left ]};
+    key <AC08> {[          t,              T,           Down,           Down ]};
+    key <AC09> {[          n,              N,          Right,          Right ]};
     key <AC10> {[          s,              S,         Delete                 ]};
     key <AC11> {[  braceleft,    bracketleft,dead_circumflex,      braceleft ]};
     key <BKSL> {[ braceright,   bracketright,     dead_grave,     braceright ]}; 
@@ -113,11 +113,11 @@ xkb_symbols "dvorak" {
     key <LSGT> {[       less,        greater,  guillemotleft, guillemotright ]};
     key <AB01> {[      minus,     underscore,           plus,       asterisk ]};
     key <AB02> {[          q,              Q,             at                 ]};
-    key <AB03> {[          j,              J,           Home                 ]};
-    key <AB04> {[          k,              K,            End                 ]};
+    key <AB03> {[          j,              J,           Home,           Home ]};
+    key <AB04> {[          k,              K,            End,            End ]};
     key <AB05> {[          x,              X                                 ]};
     key <AB06> {[          b,              B                                 ]};
-    key <AB07> {[          m,              M,           Next                 ]};
+    key <AB07> {[          m,              M,           Next,           Next ]};
     key <AB08> {[          w,              W,   questiondown,     exclamdown ]}; 
     key <AB09> {[          v,              V,       question,         exclam ]};
     key <AB10> {[          z,              Z,          slash,      backslash ]};
